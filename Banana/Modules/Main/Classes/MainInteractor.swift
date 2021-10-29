@@ -28,8 +28,6 @@ class MainInteractor: MainInteractorProtocol, MainInputInteractorProtocol {
                 let count = string
                     .stripHtml()
                     .count(for: "banana")
-                print(string
-                        .stripHtml())
                 self.presenter?.didGetCount(count)
             case .failure(let error):
                 self.presenter?.didCatchError(error)
