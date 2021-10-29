@@ -6,12 +6,12 @@
 ```swift
 protocol Walkable {
 
-    fun walk()
+    func walk()
 }
 
 extension Walkable {
 
-    fun walk() {
+    func walk() {
           print("I'm walking")
     }
 }
